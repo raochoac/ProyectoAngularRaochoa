@@ -1,0 +1,49 @@
+<div class="container">
+
+    <div class="row mt-3">
+        <div class="col">
+            <h1>Agregar Dependencia</h1>
+        </div>
+    </div>
+
+    <form [formGroup]="formularioDep" autocomplete="off" (ngSubmit)="guardarDep()">
+        <div class="row">
+            <div class="col-6">            
+
+                <mat-form-field class="w-100">
+                    <mat-label>Nombre: </mat-label>
+                    <input matInput formControlName="nombreD"  />
+                </mat-form-field>
+                
+                <mat-form-field class="w-100">
+                    <mat-label>Siglas: </mat-label>
+                    <input matInput formControlName="siglas"  />
+                </mat-form-field>
+
+                <mat-form-field class="w-100">
+                    <mat-label>Ubicación: </mat-label>
+                    <input matInput formControlName="ubicacion"  />
+                </mat-form-field>
+                <div class="row">
+                    <div class="col-6">
+                        <button mat-raised-button 
+                            color="primary"
+                            type="button"
+                            [disabled]="formularioDep.invalid"
+                            type="submit"
+                            class="me-5">                            
+                            Guardar <mat-icon>save</mat-icon>
+                        </button>
+                        <button mat-raised-button 
+                            color="secondary"
+                            type="button"
+                            [routerLink]="['/dependencias']">
+                            Regresar <mat-icon>close</mat-icon>
+                        </button>
+                    </div>
+                </div>
+        
+            </div>
+        </div>
+    </form>
+</div>

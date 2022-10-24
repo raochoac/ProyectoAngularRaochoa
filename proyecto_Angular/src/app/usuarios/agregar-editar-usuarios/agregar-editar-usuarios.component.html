@@ -1,0 +1,55 @@
+<div class="container">
+
+    <div class="row mt-3">
+        <div class="col">
+            <h1>Agregar Usuario</h1>
+        </div>
+    </div>
+
+    <form [formGroup]="formulario" autocomplete="off" (ngSubmit)="guardar()">
+        <div class="row">
+            <div class="col-6">            
+
+                <mat-form-field class="w-100">
+                    <mat-label>Nombre: </mat-label>
+                    <input matInput formControlName="nombreU"  />
+                </mat-form-field>                
+                <mat-form-field class="w-100">
+                    <mat-label>Apellido paterno: </mat-label>
+                    <input matInput formControlName="apellido_Paterno"  />
+                </mat-form-field>
+                
+                <mat-form-field class="w-100">
+                    <mat-label>Apellido materno: </mat-label>
+                    <input matInput formControlName="apellido_Materno"  />
+                </mat-form-field>
+                
+                <mat-form-field class="w-100">
+                    <mat-label>Edad: </mat-label>
+                    <input matInput formControlName="edad"  />
+                </mat-form-field>
+                
+
+                <div class="row">
+                    <div class="col-6">
+                        <button mat-raised-button 
+                            color="primary"
+                            type="button"
+                            [disabled]="formulario.invalid"
+                            type="submit"
+                            class="me-5">                            
+                            Guardar <mat-icon>save</mat-icon>
+                        </button>
+                        <button mat-raised-button 
+                            color="secondary"
+                            type="button"
+                            [routerLink]="['/usuarios']">
+                            Regresar <mat-icon>close</mat-icon>
+                        </button>
+                    </div>
+                </div>
+        
+            </div>
+        </div>
+    </form>
+</div>

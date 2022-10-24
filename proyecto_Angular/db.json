@@ -1,0 +1,64 @@
+{
+  "usuarios": [
+    {
+      "id": 1,
+      "nombreU": "Usuario 1",
+      "apellido_Paterno": "A",
+      "apellido_Materno": "B",
+      "edad": "20"
+    },
+    {
+      "id": 3,
+      "nombreU": "Usuario 3",
+      "apellido_Paterno": "C",
+      "apellido_Materno": "D",
+      "edad": "30"
+    },
+    {
+      "nombreU": "nuevo",
+      "apellido_Paterno": "nuevo",
+      "apellido_Materno": "nuevo",
+      "edad": "1",
+      "id": 4
+    },
+    {
+      "nombreU": "n",
+      "apellido_Paterno": "pa",
+      "apellido_Materno": "pm",
+      "edad": "1",
+      "id": 5
+    }
+  ],
+  "dependencias": [
+    {
+      "id": 1,
+      "nombreD": "Dependencia 1",
+      "siglas": "D1",
+      "ubicacion": "Area 1"
+    },
+    {
+      "nombreD": "Dependencia 2",
+      "siglas": "D2",
+      "ubicacion": "Area 2",
+      "id": 2
+    },
+    {
+      "nombreD": "Dependencia 3",
+      "siglas": "D3",
+      "ubicacion": "Area 3",
+      "id": 3
+    },
+    {
+      "nombreD": "dependencia 4",
+      "siglas": "D4",
+      "ubicacion": "Area  4",
+      "id": 4
+    },
+    {
+      "nombreD": "dependencia 5",
+      "siglas": "D5",
+      "ubicacion": "Area 5",
+      "id": 5
+    }
+  ]
+}
